@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#515151"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerhorizontalline">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/centerverticalline">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toStartOf="@+id/centerverticalline"
+        android:background="#FF001E2C"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="30dp"
+        android:id="@+id/playe1">
+
+        <ImageView
+            android:id="@+id/imagePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/paper" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/centerverticalline"
+        android:background="#FF001E2C"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/player2">
+
+        <ImageView
+            android:id="@+id/imagebot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/paper" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/playe1text"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toStartOf="@+id/centerverticalline"
+        android:background="#161C20"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/playe1"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Pleyer1"
+            android:textColor="#FFEB3B"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@+id/centerverticalline"
+        android:background="#161C20"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/player2"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Pleyer2"
+            android:textColor="#FFEB3B"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/pater1buttom"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toStartOf="@+id/centerverticalline"
+            android:layout_marginTop="125dp"
+            android:layout_below="@+id/playe1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#161C20"
+                android:gravity="center"
+                android:text="Click here "
+                android:textColor="#FFEB3B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pater2buttom"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toStartOf="@+id/centerverticalline"
+        android:layout_marginTop="125dp"
+        android:layout_below="@+id/player2"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="30dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Click here "
+            android:gravity="center"
+            android:backgroundTint="#161C20"
+            android:textColor="#FFEB3B"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/result"
+        android:textSize="15dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="188dp"
+        android:text="result"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#2196F3"/>
+
+
+</RelativeLayout>
