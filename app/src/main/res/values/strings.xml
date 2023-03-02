@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">rock_pepar</string>
+    <string name="pleyer1">Pleyer1</string>
+    <string name="pleyer2">Pleyer2</string>
+    <string name="click_here">Click here</string>
+    <string name="result">result</string>
+    <string name="click_on_the_buttons">click on the buttons</string>
+    <string name="next_page">next page :</string>
+    <string name="be_careful">be careful</string>
+    <string name="choose_a_buttom">choose a buttom</string>
+    <string name="hagigat">حقیقت</string>
+    <string name="hagigatbox">برا شما یک متن ظاهر میشود (:</string>
+    <string name="jorat">جرعت</string>
+    <string name="joratbox">برا شما یک متن ظاهر میشود (:</string>
 </resources>

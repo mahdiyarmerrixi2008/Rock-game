@@ -30,7 +30,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_alignParentTop="true"
-
         android:layout_marginTop="30dp"
         android:id="@+id/playe1">
 
@@ -80,9 +79,9 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="Pleyer1"
+            android:text="@string/pleyer1"
             android:textColor="#FFEB3B"
-            android:textSize="22dp"
+            android:textSize="@dimen/x4"
             android:textStyle="bold" />
     </RelativeLayout>
     <RelativeLayout
@@ -91,7 +90,6 @@
         android:layout_toEndOf="@+id/centerverticalline"
         android:background="#161C20"
         android:layout_alignParentEnd="true"
-
         android:layout_marginBottom="35dp"
         android:layout_marginStart="20dp"
         android:layout_below="@id/player2"
@@ -103,14 +101,13 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="Pleyer2"
+            android:text="@string/pleyer2"
             android:textColor="#FFEB3B"
-            android:textSize="22dp"
+            android:textSize="@dimen/x4"
             android:textStyle="bold" />
 
     </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/pater1buttom"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_toStartOf="@+id/centerverticalline"
@@ -122,6 +119,7 @@
             android:layout_alignParentStart="true">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pater1buttom"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentStart="true"
@@ -131,14 +129,13 @@
                 android:layout_centerInParent="true"
                 android:backgroundTint="#161C20"
                 android:gravity="center"
-                android:text="Click here "
+                android:text="@string/click_here"
                 android:textColor="#FFEB3B"
-                android:textSize="18sp"
+                android:textSize="@dimen/clicjtextsize"
                 android:textStyle="bold" />
         </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/pater2buttom"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_toStartOf="@+id/centerverticalline"
@@ -149,13 +146,14 @@
         android:layout_marginEnd="30dp">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pater2buttom"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Click here "
+            android:text="@string/click_here"
             android:gravity="center"
             android:backgroundTint="#161C20"
             android:textColor="#FFEB3B"
-            android:textSize="18sp"
+            android:textSize="@dimen/clicjtextsize"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
@@ -165,21 +163,52 @@
     </RelativeLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/result"
-        android:textSize="15dp"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="188dp"
-        android:text="result"
-        android:textColor="@color/white"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textStyle="bold"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:backgroundTint="#2196F3"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="188dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/result"
+        android:textColor="@color/white"
+        android:textSize="@dimen/resultTextSize"
+        android:textStyle="bold" />
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resulttext"
+        android:layout_width="match_parent"
+        android:text="@string/click_on_the_buttons"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#FFEB3B"
+        android:layout_alignTop="@id/result"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/nextPage"
+        android:layout_width="match_parent"
+        android:text="@string/next_page"
+        android:backgroundTint="#2196F3"
+        android:layout_alignTop="@id/resulttext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginEnd="120dp"
+        android:textStyle="italic"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="58dp"
+        android:layout_height="wrap_content"/>
 
 </RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="x4">22sp</dimen>
+    <dimen name="clicjtextsize">18sp</dimen>
+    <dimen name="resultTextSize">15sp</dimen>
+    <dimen name="x7_2">26sp</dimen>
+    <dimen name="sp24">24sp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="x5">20sp</dimen>
+    <dimen name="x3">18sp</dimen>
+</resources>

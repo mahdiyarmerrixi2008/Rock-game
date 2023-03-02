@@ -16,18 +16,18 @@ public class splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        String win;
 
         AppCompatButton mhagigat=(AppCompatButton) findViewById(R.id.hagigat);
         AppCompatButton mjorat=(AppCompatButton) findViewById(R.id.jorat);
         AppCompatTextView mtexthagigat=(AppCompatTextView) findViewById(R.id.texthagigat);
         AppCompatTextView mtextjorat=(AppCompatTextView) findViewById(R.id.textjorat);
         AppCompatButton mbakcbutton=(AppCompatButton) findViewById(R.id.bakcbutton);
-
         mhagigat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Random random = new Random();
-                int bhagigat = (random.nextInt(10));
+                int bhagigat = (random.nextInt(14));
                 switch (bhagigat) {
                     case 0:
                         mtexthagigat.setText("برا دیگران تله انداختی؟");
@@ -59,6 +59,18 @@ public class splash extends AppCompatActivity {
                     case 9:
                         mtexthagigat.setText("به کی حسودی میکنی؟");
                         break;
+                    case 10:
+                        mtexthagigat.setText("چند بار مزاحمی تلفنی کردی؟");
+                        break;
+                    case 11:
+                        mtexthagigat.setText("کیو قامکی فروختی؟");
+                        break;
+                    case 12:
+                        mtexthagigat.setText("چیز مخفی داری؟");
+                        break;
+                    case 13:
+                        mtexthagigat.setText("تا الن کاری کردی که به گردن دیگران انداخته باشی؟(کی و چرا)");
+                        break;
                 }
             }
         });
@@ -67,7 +79,7 @@ public class splash extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Random botrandom = new Random();
-                int bjorat = (botrandom.nextInt(10));
+                int bjorat = (botrandom.nextInt(14));
                 switch (bjorat) {
                     case 0:
                         mtextjorat.setText("پاشو برقص");
@@ -98,6 +110,18 @@ public class splash extends AppCompatActivity {
                         break;
                     case 9:
                         mtextjorat.setText("10 هزار تومان به طرف مقابل بده");
+                        break;
+                    case 10:
+                        mtextjorat.setText("یه ربع یه پا وایسا دستاتم بالا بیر");
+                        break;
+                    case 11:
+                        mtextjorat.setText("زنگ بزن به یکی و ایستگاه اش رو بگیر ");
+                        break;
+                    case 12:
+                        mtextjorat.setText("کجا ها قایمکی رفتی ؟");
+                        break;
+                    case 13:
+                        mtextjorat.setText("الان که فصل سرماست نیم ساعت بیرون وایسا ");
                         break;
                 }
             }
